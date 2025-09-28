@@ -18,7 +18,6 @@ export const metadata: Metadata = {
     "Hello! I'm Axelio (axelio-dev), a young student learning full-stack web development and aiming to work in IT.",
 };
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -27,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-linear-to-r from-blue-900 to-slate-900`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-linear-to-r from-blue-900 to-slate-900 dark`}
       >
         {children}
       </body>
