@@ -4,7 +4,7 @@ export default function Logo() {
   return (
     <div className="flex flex-row items-center">
         <Image 
-            className='border-2 border-white rounded-full h-15 w-15 ml-5 mt-2'
+            className='border-2 border-white rounded-full h-15 w-15 ml-5'
             src="/profile.jpg"
             alt="My profile picture"
             width={1000}
