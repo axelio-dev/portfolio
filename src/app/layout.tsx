@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Dancing_Script, Cookie } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -9,6 +9,16 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+export const dancingScript = Dancing_Script({
+  weight: ["500"],
+  subsets: ["latin"],
+});
+
+export const cookie = Cookie({
+  weight: ["400"], // Regular
   subsets: ["latin"],
 });
 
@@ -26,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-linear-to-r from-blue-900 to-slate-900 dark`}
+        className={`${geistSans.variable} ${geistMono.variable}antialiased bg-linear-to-r from-blue-900 to-slate-900 dark`}
       >
         {children}
       </body>
