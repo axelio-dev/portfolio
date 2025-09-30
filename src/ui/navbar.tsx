@@ -1,3 +1,4 @@
+import { geistSans } from "@/app/layout";
 import Logo from "./logo";
 import NavbarItem from "./NavbarItem";
 
@@ -8,7 +9,9 @@ export default function Navbar() {
         <div className="flex items-center">
           <Logo />
         </div>
-        <div className="flex items-center gap-10">
+        <div
+          className={`flex items-center gap-13 text-xl ${geistSans.className}`}
+        >
           <NavbarItem href="#home" text="Home" />
           <NavbarItem href="#skills" text="Skills" />
           <NavbarItem href="#projects" text="Projects" />

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { dancingScript, cookie } from "../app/layout";
+import { geistSans } from "../app/layout";
 
 export default function Logo() {
   return (
@@ -11,7 +11,9 @@ export default function Logo() {
         width={1000}
         height={1000}
       />
-      <h2 className={`text-white ml-5 text-5xl ${cookie.className}`}>
+      <h2
+        className={`text-white ml-5 text-2xl font-semibold ${geistSans.className}`}
+      >
         AxelioDev
       </h2>
     </div>
