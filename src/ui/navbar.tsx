@@ -1,4 +1,4 @@
-import { geistSans } from "@/app/layout";
+import { inter } from "@/app/layout";
 import Logo from "./logo";
 import NavbarItem from "./NavbarItem";
 
@@ -10,7 +10,7 @@ export default function Navbar() {
           <Logo />
         </div>
         <div
-          className={`flex items-center gap-13 text-xl ${geistSans.className}`}
+          className={`flex items-center gap-13 text-xl font-light${inter.className} mr-[20px]`}
         >
           <NavbarItem href="#home" text="Home" />
           <NavbarItem href="#skills" text="Skills" />

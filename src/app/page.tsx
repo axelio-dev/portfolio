@@ -1,15 +1,31 @@
 import Navbar from "@/ui/navbar";
+import Image from "next/image";
+import { inter } from "./layout";
 
 export default function Home() {
   return (
     <div className="">
       <Navbar />
-      <section className="">
-        <h1 className="ml-5 mt-25 text-3xl text-white">
-          Hello there !<br /> I am AxelioDev, a student learning to code, step
-          by step, every day.
-        </h1>
-      </section>
+      <div className="grid grid-cols-2 gap-6 items-center">
+        <div className="text-white ml-[75px] mt-[140px]">
+          <h1 className={`${inter.className} text-6xl font-bold`}>
+            I'm AxelioDev
+          </h1>
+          <h2 className="text-3xl mb-[15px]">
+            A fullstack developer in training
+          </h2>
+          <h3 className="text-2xl">I create websites</h3>
+        </div>
+        <div className="size-75 mt-[150px] ml-auto mr-[150px]">
+          <Image
+            className="rounded-[25px]"
+            src="/profile.webp"
+            alt="Picture of the author"
+            width={500}
+            height={500}
+          />
+        </div>
+      </div>
     </div>
   );
 }

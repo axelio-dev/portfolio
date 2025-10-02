@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 
 export const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
   weight: ["200", "300", "400", "500", "600"],
+});
+
+export const inter = Inter({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+  weight: ["700"],
 });
 
 const geistMono = Geist_Mono({
@@ -27,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable}antialiased bg-linear-to-r from-blue-900 to-slate-950 dark`}
+        className={`${geistSans.variable} ${geistMono.variable}antialiased bg-[radial-gradient(circle,#08314C_0%,#0F0F0F_150%)]`}
       >
         {children}
       </body>
