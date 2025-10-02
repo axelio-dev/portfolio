@@ -1,11 +1,13 @@
 import Navbar from "@/ui/navbar";
 import Image from "next/image";
 import { inter } from "./layout";
+import Card from "@/ui/card";
 
 export default function Home() {
   return (
     <div className="">
       <Navbar />
+      {/* Introduction about myself */}
       <div className="grid grid-cols-2 gap-6 items-center">
         <div className="text-white ml-[75px] mt-[140px]">
           <h1 className={`${inter.className} text-6xl font-bold`}>
@@ -18,12 +20,29 @@ export default function Home() {
         </div>
         <div className="size-75 mt-[150px] ml-auto mr-[150px]">
           <Image
-            className="rounded-[25px]"
+            className="rounded-[25px] transition-transform duration-300 hover:scale-107"
             src="/profile.webp"
             alt="Picture of the author"
             width={500}
             height={500}
           />
+        </div>
+      </div>
+      {/* My skills */}
+      <div className="m-auto">
+        <h1
+          className={`${inter.className} text-white text-center text-2xl font-bold mt-[150px]`}
+        >
+          My skills
+        </h1>
+        <div className="grid md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 justify-items-center gap-7">
+          <Card image="/git.png" title="Git" />
+          <Card image="/git.png" title="Git" />
+          <Card image="/git.png" title="Git" />
+          <Card image="/git.png" title="Git" />
+          <Card image="/git.png" title="Git" />
+          <Card image="/git.png" title="Git" />
+          <Card image="/git.png" title="Git" />
         </div>
       </div>
     </div>
