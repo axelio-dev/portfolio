@@ -20,7 +20,7 @@ export default function Home() {
         </div>
         <div className="size-75 mt-[150px] ml-auto mr-[150px]">
           <Image
-            className="rounded-[25px] transition-transform duration-300 hover:scale-107"
+            className="rounded-[25px] transition-transform duration-500 ease-in-out hover:scale-105"
             src="/profile.webp"
             alt="Picture of the author"
             width={500}
@@ -35,7 +35,7 @@ export default function Home() {
         >
           My skills
         </h1>
-        <div className="grid md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 justify-items-center gap-7">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-center gap-8 ml-[155px] mr-[155px]">
           <Card image="/html.png" title="Html" />
           <Card image="/css.png" title="Css" />
           <Card image="/javascript.png" title="Javascript" />
