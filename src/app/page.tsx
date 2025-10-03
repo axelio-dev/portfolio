@@ -31,17 +31,18 @@ export default function Home() {
       {/* My skills */}
       <div className="m-auto">
         <h1
-          className={`${inter.className} text-white text-center text-2xl font-bold mt-[150px]`}
+          className={`${inter.className} text-white text-center text-2xl font-bold mt-[150px] mb-[20px]`}
         >
           My skills
         </h1>
         <div className="grid md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 justify-items-center gap-7">
-          <Card image="/git.png" title="Git" />
-          <Card image="/git.png" title="Git" />
-          <Card image="/git.png" title="Git" />
-          <Card image="/git.png" title="Git" />
-          <Card image="/git.png" title="Git" />
-          <Card image="/git.png" title="Git" />
+          <Card image="/html.png" title="Html" />
+          <Card image="/css.png" title="Css" />
+          <Card image="/javascript.png" title="Javascript" />
+          <Card image="/typescript.png" title="Typescript" />
+          <Card image="/tailwind.png" title="Tailwindcss" />
+          <Card image="/mongodb.png" title="MongoDB" />
+          <Card image="/nextjs.png" title="Nextjs" />
           <Card image="/git.png" title="Git" />
         </div>
       </div>
