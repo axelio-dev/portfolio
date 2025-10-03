@@ -4,7 +4,7 @@ import NavbarItem from "./NavbarItem";
 
 export default function Navbar() {
   return (
-    <nav className="w-full top-0 left-0 right-0 backdrop-blur-[15px] text-white fixed border-b border-white py-2 px-4">
+    <nav className="w-full top-0 left-0 right-0 backdrop-blur-[15px] z-50 text-white fixed border-b border-white py-2 px-4">
       <div className="flex items-center justify-between">
         <div className="flex items-center">
           <Logo />
