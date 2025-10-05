@@ -8,7 +8,7 @@ export default function Home() {
     <div className="">
       <Navbar />
       {/* Introduction about myself */}
-      <div className="grid grid-cols-2 gap-6 items-center">
+      <div className="grid grid-cols-2 gap-6 items-center" id="home">
         <div className="text-white ml-[75px] mt-[140px]">
           <h1 className={`${inter.className} text-6xl font-bold`}>
             I'm AxelioDev
@@ -29,7 +29,7 @@ export default function Home() {
         </div>
       </div>
       {/* My skills */}
-      <div className="m-auto">
+      <div className="m-auto" id="skills">
         <h1
           className={`${inter.className} text-white text-center text-2xl font-bold mt-[150px] mb-[20px]`}
         >
@@ -44,6 +44,27 @@ export default function Home() {
           <Card image="/mongodb.png" title="MongoDB" />
           <Card image="/nextjs.png" title="Nextjs" />
           <Card image="/git.png" title="Git" />
+        </div>
+      </div>
+
+      {/* My projects */}
+
+      <div className="m-auto" id="projects">
+        <h1
+          className={`${inter.className} text-white text-center text-2xl font-bold mt-[150px] mb-[20px]`}
+        >
+          My projects
+        </h1>
+        <div className="mb-[5px] grid md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-4 justify-items-center gap-8 ml-[155px] mr-[155px]">
+          <Card
+            description="This is a portfolio that presents me (skills, projects, etc.). You are currently on it 😊"
+            title="𝗣𝗼𝗿𝘁𝗳𝗼𝗹𝗶𝗼"
+            button="Visit"
+            link="https://axelio-dev.vercel.app"
+          />
+          <Card description="Other projects coming soon 👀..." title="" />
+          <Card description="Other projects coming soon 👀..." title="" />
+          <Card description="Other projects coming soon 👀..." title="" />
         </div>
       </div>
     </div>
