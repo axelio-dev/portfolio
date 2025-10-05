@@ -15,7 +15,7 @@ export default function Navbar() {
           <NavbarItem href="#home" text="Home" />
           <NavbarItem href="#skills" text="Skills" />
           <NavbarItem href="#projects" text="Projects" />
-          <NavbarItem href="#activities" text="My Activities" />
+          <NavbarItem href="#statistics" text="Statistics" />
           <NavbarItem href="/contact" text="Contact me" />
         </div>
       </div>

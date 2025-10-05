@@ -2,11 +2,14 @@ import Navbar from "@/ui/navbar";
 import Image from "next/image";
 import { inter } from "./layout";
 import Card from "@/ui/card";
+import Stats from "@/ui/Stats";
 
 export default function Home() {
   return (
     <div className="">
+      {/* Navbar */}
       <Navbar />
+
       {/* Introduction about myself */}
       <div className="grid grid-cols-2 gap-6 items-center" id="home">
         <div className="text-white ml-[75px] mt-[140px]">
@@ -28,6 +31,7 @@ export default function Home() {
           />
         </div>
       </div>
+
       {/* My skills */}
       <div className="m-auto" id="skills">
         <h1
@@ -48,7 +52,6 @@ export default function Home() {
       </div>
 
       {/* My projects */}
-
       <div className="m-auto" id="projects">
         <h1
           className={`${inter.className} text-white text-center text-2xl font-bold mt-[150px] mb-[20px]`}
@@ -66,6 +69,16 @@ export default function Home() {
           <Card description="Other projects coming soon 👀..." title="" />
           <Card description="Other projects coming soon 👀..." title="" />
         </div>
+      </div>
+
+      {/* Statistics */}
+      <div className="m-auto py-10" id="statistics">
+        <h1
+          className={`${inter.className} text-white text-center text-2xl font-bold mt-[150px] mb-[20px]`}
+        >
+          Statistics
+        </h1>
+        <Stats />
       </div>
     </div>
   );
