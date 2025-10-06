@@ -3,7 +3,7 @@ export default function Stats() {
     <div className="flex justify-around gap-15 mr-[40px] ml-[40px]">
       <div className="flex-1 flex flex-col items-center justify-center text-center p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-md transition-transform duration-500 ease-in-out hover:scale-105 hover:shadow-blue-500/40 hover:border-blue-500">
         <div className="text-4xl text-white font-bold">12</div>
-        <div className="mt-2 text-gray-300">Heures de codage</div>
+        <div className="mt-2 text-gray-300">Coding Hours</div>
       </div>
 
       <div className="flex-1 flex flex-col items-center justify-center text-center p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-md transition-transform duration-500 ease-in-out hover:scale-105 hover:shadow-blue-500/40 hover:border-blue-500">
