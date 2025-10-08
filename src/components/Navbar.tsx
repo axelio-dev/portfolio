@@ -1,5 +1,5 @@
 import { inter } from "@/app/layout";
-import Logo from "./logo";
+import Logo from "@/components/Logo";
 import NavbarItem from "./NavbarItem";
 
 export default function Navbar() {

@@ -1,8 +1,8 @@
-import Navbar from "@/ui/navbar";
+import Navbar from "../components/Navbar";
 import Image from "next/image";
 import { inter } from "./layout";
-import Card from "@/ui/card";
-import Stats from "@/ui/Stats";
+import Card from "@/components/Card";
+import Stats from "@/components/Stats";
 
 export default function Home() {
   return (
@@ -58,7 +58,7 @@ export default function Home() {
         >
           My projects
         </h1>
-        <div className="mb-[5px] grid md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-4 justify-items-center gap-8 ml-[155px] mr-[155px]">
+        <div className="mb-[5px] grid md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-4 items-center gap-8 ml-[155px] mr-[155px]">
           <Card
             description="This is a portfolio that presents me (skills, projects, etc.). You are currently on it 😊"
             title="𝗣𝗼𝗿𝘁𝗳𝗼𝗹𝗶𝗼"
