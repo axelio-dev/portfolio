@@ -40,13 +40,13 @@ export default function Home() {
           My skills
         </h1>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-center gap-8 ml-[155px] mr-[155px]">
-          <Card image="/html.png" title="Html" />
-          <Card image="/css.png" title="Css" />
+          <Card image="/html.png" title="HTML" />
+          <Card image="/css.png" title="CSS" />
           <Card image="/javascript.png" title="Javascript" />
           <Card image="/typescript.png" title="Typescript" />
-          <Card image="/tailwind.png" title="Tailwindcss" />
+          <Card image="/tailwind.png" title="TailwindCSS" />
           <Card image="/mongodb.png" title="MongoDB" />
-          <Card image="/nextjs.png" title="Nextjs" />
+          <Card image="/nextjs.png" title="Next.js" />
           <Card image="/git.png" title="Git" />
         </div>
       </div>
@@ -65,7 +65,6 @@ export default function Home() {
             button="Visit"
             link="https://axelio-dev.vercel.app"
           />
-          <Card description="Other projects coming soon 👀..." title="" />
           <Card description="Other projects coming soon 👀..." title="" />
           <Card description="Other projects coming soon 👀..." title="" />
         </div>
