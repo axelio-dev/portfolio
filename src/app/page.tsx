@@ -3,6 +3,7 @@ import Image from "next/image";
 import { inter } from "./layout";
 import Card from "@/components/Card";
 import Stats from "@/components/Stats";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -81,6 +82,9 @@ export default function Home() {
         </h1>
         <Stats />
       </div>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }
