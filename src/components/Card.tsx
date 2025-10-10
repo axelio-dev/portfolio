@@ -35,7 +35,7 @@ export default function Card({
         )}
         <h3 className="text-white text-xl text-center mt-[10px]">{title}</h3>
         {description && (
-          <p className="text-blue-600 italic text-md text-center mt-[2px]">
+          <p className="text-gray-400 italic text-md text-center mt-[2px]">
             {description}
           </p>
         )}

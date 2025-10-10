@@ -63,12 +63,18 @@ export default function Home() {
           <div className="grid md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-8 max-w-[920px] mx-auto">
             <Card
               description="This is a portfolio that presents me (skills, projects, etc.). You are currently on it 😊"
-              title="𝗣𝗼𝗿𝘁𝗳𝗼𝗹𝗶𝗼"
+              title="𝙋𝙤𝙧𝙩𝙤𝙛𝙤𝙡𝙞𝙤"
               button="Visit"
               link="https://axelio-dev.vercel.app"
             />
-            <Card description="Other projects coming soon 👀..." title="" />
-            <Card description="Other projects coming soon 👀..." title="" />
+            <Card
+              description="Other projects coming soon 👀..."
+              title="𝘾𝙤𝙢𝙢𝙞𝙣𝙜 𝙨𝙤𝙤𝙣..."
+            />
+            <Card
+              description="Other projects coming soon 👀..."
+              title="𝘾𝙤𝙢𝙢𝙞𝙣𝙜 𝙨𝙤𝙤𝙣..."
+            />
           </div>
         </div>
       </div>
