@@ -58,15 +58,17 @@ export default function Home() {
         >
           My projects
         </h1>
-        <div className="mb-[5px] grid md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-4 items-center gap-8 ml-[155px] mr-[155px]">
-          <Card
-            description="This is a portfolio that presents me (skills, projects, etc.). You are currently on it 😊"
-            title="𝗣𝗼𝗿𝘁𝗳𝗼𝗹𝗶𝗼"
-            button="Visit"
-            link="https://axelio-dev.vercel.app"
-          />
-          <Card description="Other projects coming soon 👀..." title="" />
-          <Card description="Other projects coming soon 👀..." title="" />
+        <div className="mb-[5px] flex justify-center">
+          <div className="grid md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-4 gap-8 max-w-[1200px]">
+            <Card
+              description="This is a portfolio that presents me (skills, projects, etc.). You are currently on it 😊"
+              title="𝗣𝗼𝗿𝘁𝗳𝗼𝗹𝗶𝗼"
+              button="Visit"
+              link="https://axelio-dev.vercel.app"
+            />
+            <Card description="Other projects coming soon 👀..." title="" />
+            <Card description="Other projects coming soon 👀..." title="" />
+          </div>
         </div>
       </div>
 
