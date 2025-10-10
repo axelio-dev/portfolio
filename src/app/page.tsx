@@ -60,7 +60,7 @@ export default function Home() {
           My projects
         </h1>
         <div className="mb-[5px] flex justify-center">
-          <div className="grid md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-4 gap-8 max-w-[1200px]">
+          <div className="grid md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-8 max-w-[920px] mx-auto">
             <Card
               description="This is a portfolio that presents me (skills, projects, etc.). You are currently on it 😊"
               title="𝗣𝗼𝗿𝘁𝗳𝗼𝗹𝗶𝗼"
