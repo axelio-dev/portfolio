@@ -22,7 +22,7 @@ export default function Footer() {
         >
           Website
         </Link>
-        <Link href="/contact" className="hover:text-blue-400 transition-colors">
+        <Link href="#contact" className="hover:text-blue-400 transition-colors">
           Contact
         </Link>
       </div>
