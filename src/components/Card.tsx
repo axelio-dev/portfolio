@@ -14,16 +14,21 @@ export default function Card({
   description,
   button,
   link,
+  icon, // ✅ nouvelle prop pour l’icône
 }: {
   title: string;
   image?: string;
   description?: string;
   button?: string;
   link?: string;
+  icon?: React.ReactNode; // ✅ permet de passer une icône JSX (ex : <Discord />)
 }) {
   return (
     <div className="h-full w-full mt-4 border border-white/20 rounded-2xl bg-white/10 backdrop-blur-md p-6 flex flex-col items-center justify-center text-center shadow-md transition-transform duration-500 ease-in-out hover:scale-105 hover:shadow-blue-500/40 hover:border-blue-500">
-      <div className="mx-auto flex flex-col gap-3">
+      <div className="mx-auto flex flex-col gap-3 items-center">
+        {/* ✅ Affichage de l’icône s’il y en a une */}
+        {icon && <div className="text-blue-400 mb-1">{icon}</div>}
+
         {image && (
           <Image
             src={image}
