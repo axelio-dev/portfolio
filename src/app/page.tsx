@@ -1,6 +1,5 @@
-import Navbar from "../components/Navbar";
 import Image from "next/image";
-import { inter } from "./layout";
+import Navbar from "../components/Navbar";
 import Card from "@/components/Card";
 import Stats from "@/components/Stats";
 import Footer from "@/components/Footer";
@@ -15,9 +14,7 @@ export default function Home() {
       {/* Introduction about myself */}
       <div className="grid grid-cols-2 gap-6 items-center" id="home">
         <div className="text-white ml-[75px] mt-[140px]">
-          <h1 className={`${inter.className} text-6xl font-bold`}>
-            I'm AxelioDev
-          </h1>
+          <h1 className={`text-6xl font-bold`}>I'm AxelioDev</h1>
           <h2 className="text-3xl mb-[15px]">
             A fullstack developer in training
           </h2>
@@ -37,7 +34,7 @@ export default function Home() {
       {/* My skills */}
       <div className="m-auto" id="skills">
         <h1
-          className={`${inter.className} text-white text-center text-2xl font-bold mt-[150px] mb-[20px]`}
+          className={`text-white text-center text-2xl font-bold mt-[150px] mb-[20px]`}
         >
           My skills
         </h1>
@@ -56,7 +53,7 @@ export default function Home() {
       {/* My projects */}
       <div className="m-auto" id="projects">
         <h1
-          className={`${inter.className} text-white text-center text-2xl font-bold mt-[150px] mb-[20px]`}
+          className={`text-white text-center text-2xl font-bold mt-[150px] mb-[20px]`}
         >
           My projects
         </h1>
@@ -83,7 +80,7 @@ export default function Home() {
       {/* Statistics */}
       <div className="m-auto py-10" id="statistics">
         <h1
-          className={`${inter.className} text-white text-center text-2xl font-bold mt-[150px] mb-[20px]`}
+          className={`text-white text-center text-2xl font-bold mt-[150px] mb-[20px]`}
         >
           Statistics
         </h1>
@@ -91,9 +88,9 @@ export default function Home() {
       </div>
 
       {/* Contact */}
-      <div className="m-auto">
+      <div className="m-auto" id="contact">
         <h1
-          className={`${inter.className} text-white text-center text-2xl font-bold mt-[150px] mb-[20px]`}
+          className={`text-white text-center text-2xl font-bold mt-[150px] mb-[20px]`}
         >
           Contact me
         </h1>

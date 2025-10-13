@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { inter } from "../app/layout";
 
 export default function Logo() {
   return (
@@ -12,7 +11,7 @@ export default function Logo() {
         height={1000}
       />
       <h2
-        className={`text-white ml-5 text-2xl font-semibold ${inter.className}`}
+        className={`text-white ml-5 text-2xl font-semibold`}
       >
         AxelioDev
       </h2>

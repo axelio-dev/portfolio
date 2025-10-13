@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable}antialiased bg-[radial-gradient(circle,#08314C_0%,#2B1A1F_150%)]`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[radial-gradient(circle,#08314C_0%,#2B1A1F_150%)]`}
       >
         <QueryClientProvider>{children}</QueryClientProvider>
       </body>
