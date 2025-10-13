@@ -19,7 +19,7 @@ export default function Navbar() {
           <div
             className={`flex items-center gap-13 text-xl font-light mr-[20px]`}
           >
-            <div className="md:hidden max-md:hidden">
+            <div className="max-md:hidden">
               <NavbarItem href="#home" text="Home" />
               <NavbarItem href="#skills" text="Skills" />
               <NavbarItem href="#projects" text="Projects" />
@@ -28,7 +28,7 @@ export default function Navbar() {
             </div>
 
             <Menu
-              className="ml-4 cursor-pointer z-60"
+              className="ml-4 cursor-pointer z-60 md:hidden"
               onClick={() => setIsOpen(!isOpen)}
             />
           </div>
