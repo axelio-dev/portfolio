@@ -12,15 +12,19 @@ export default function Home() {
       <Navbar />
 
       {/* Introduction about myself */}
-      <div className="grid grid-cols-2 gap-6 items-center" id="home">
-        <div className="text-white ml-[75px] mt-[140px]">
-          <h1 className={`text-6xl font-bold`}>I'm AxelioDev</h1>
-          <h2 className="text-3xl mb-[15px]">
+      <div
+        className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 items-center px-6 md:px-0"
+        id="home"
+      >
+        <div className="text-white mt-[150px] md:ml-[75px]">
+          <h1 className="text-5xl md:text-6xl font-bold">I'm AxelioDev</h1>
+          <h2 className="text-2xl md:text-3xl mb-[15px]">
             A fullstack developer in training
           </h2>
-          <h3 className="text-2xl">I create websites</h3>
+          <h3 className="text-xl md:text-2xl">I create websites</h3>
         </div>
-        <div className="size-75 mt-[150px] ml-auto mr-[150px]">
+
+        <div className="mt-[50px] md:mt-[150px] mx-auto md:ml-auto md:mr-[150px] size-65">
           <Image
             className="rounded-[25px] transition-transform duration-500 ease-in-out hover:scale-105"
             src="/profile.webp"
