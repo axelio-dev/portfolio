@@ -19,13 +19,11 @@ export default function Navbar() {
           <div
             className={`flex items-center gap-13 text-xl font-light mr-[20px]`}
           >
-            <div className="max-md:hidden">
-              <NavbarItem href="#home" text="Home" />
-              <NavbarItem href="#skills" text="Skills" />
-              <NavbarItem href="#projects" text="Projects" />
-              <NavbarItem href="#statistics" text="Statistics" />
-              <NavbarItem href="#contact" text="Contact me" />
-            </div>
+            <NavbarItem href="#home" text="Home" />
+            <NavbarItem href="#skills" text="Skills" />
+            <NavbarItem href="#projects" text="Projects" />
+            <NavbarItem href="#statistics" text="Statistics" />
+            <NavbarItem href="#contact" text="Contact me" />
 
             <Menu
               className="ml-4 cursor-pointer z-60 md:hidden"
