@@ -16,12 +16,6 @@ export default function Footer() {
         >
           GitHub
         </Link>
-        <Link
-          href="https://axelio-dev.vercel.app"
-          className="hover:text-blue-400 transition-colors"
-        >
-          Website
-        </Link>
         <Link href="#contact" className="hover:text-blue-400 transition-colors">
           Contact
         </Link>
