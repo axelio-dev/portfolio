@@ -13,18 +13,22 @@ export default function Home() {
 
       {/* Introduction about myself */}
       <div
-        className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 items-center px-6 md:px-0"
+        className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 2xl:gap-8 items-center px-6 md:px-0"
         id="home"
       >
-        <div className="text-white mt-[150px] md:ml-[75px]">
-          <h1 className="text-5xl md:text-6xl font-bold">I'm AxelioDev</h1>
-          <h2 className="text-2xl md:text-3xl mb-[15px]">
+        <div className="text-white mt-[150px] md:ml-[75px] 2xl:mt-[0px] 2xl:ml-[110px]">
+          <h1 className="text-5xl md:text-6xl font-bold xl:text-7xl">
+            I'm AxelioDev
+          </h1>
+          <h2 className="text-2xl md:text-3xl 2xl:text-4xl mb-[15px] xl:mb-[20px]">
             A fullstack developer in training
           </h2>
-          <h3 className="text-xl md:text-2xl">I create websites</h3>
+          <h3 className="text-xl md:text-2xl 2xl:text-3xl">
+            I create websites
+          </h3>
         </div>
 
-        <div className="mt-[50px] md:mt-[150px] mx-auto md:ml-auto md:mr-[150px] size-65">
+        <div className="mt-[50px] md:mt-[150px] 2xl:m-[300px] mx-auto md:ml-auto 2xl:md-auto md:mr-[150px] size-65 2xl:size-100">
           <Image
             className="rounded-[25px] transition-transform duration-500 ease-in-out hover:scale-105"
             src="/profile.webp"
@@ -38,11 +42,11 @@ export default function Home() {
       {/* My skills */}
       <div className="m-auto" id="skills">
         <h1
-          className={`text-white text-center text-2xl font-bold mt-[150px] mb-[20px]`}
+          className={`text-white text-center text-2xl font-bold scroll-m-160 mt-[150px] mb-[20px] 2xl:text-3xl 2xl:mt[100px]`}
         >
           My skills
         </h1>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-center gap-8 ml-[155px] mr-[155px]">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 justify-items-center gap-8 ml-[155px] mr-[155px]">
           <Card image="/html.png" title="HTML" />
           <Card image="/css.png" title="CSS" />
           <Card image="/javascript.png" title="Javascript" />

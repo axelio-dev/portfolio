@@ -10,9 +10,7 @@ export default function Logo() {
         width={1000}
         height={1000}
       />
-      <h2
-        className={`text-white ml-5 text-2xl font-semibold`}
-      >
+      <h2 className={`text-white ml-5 text-2xl  2xl:text-3xl  font-semibold`}>
         AxelioDev
       </h2>
     </div>
