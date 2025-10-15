@@ -14,9 +14,10 @@ export default function NavbarItem({
 }) {
   const handleClick = () => {
     const element = document.getElementById(href);
+    const paddingTop = 100; // ton "padding" en pixels
     if (element) {
       window.scrollTo({
-        top: element.offsetTop,
+        top: element.offsetTop - paddingTop,
         behavior: "smooth",
       });
     }
