@@ -14,7 +14,7 @@ export default function NavbarItem({
 }) {
   const handleClick = () => {
     const element = document.getElementById(href);
-    const paddingTop = 100; // ton "padding" en pixels
+    const paddingTop = 100; // Padding to not hide the title under the navbar fixed with blur
     if (element) {
       window.scrollTo({
         top: element.offsetTop - paddingTop,
@@ -23,7 +23,7 @@ export default function NavbarItem({
     }
 
     if (isSidebar && closeSidebar) {
-      closeSidebar(); // ferme la sidebar sur mobile
+      closeSidebar(); // Close the sidebar on mobile
     }
   };
 
