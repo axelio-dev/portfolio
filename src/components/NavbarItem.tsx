@@ -5,20 +5,35 @@ export default function NavbarItem({
   text,
   href,
   isSidebar = false,
+  closeSidebar, // fonction optionnelle pour fermer la sidebar
 }: {
   text: string;
   href: string;
   isSidebar?: boolean;
+  closeSidebar?: () => void;
 }) {
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    element?.scrollIntoView({ behavior: "smooth" });
+  const handleClick = () => {
+    const element = document.getElementById(href);
+    if (element) {
+      window.scrollTo({
+        top: element.offsetTop,
+        behavior: "smooth",
+      });
+    }
+
+    if (isSidebar && closeSidebar) {
+      closeSidebar(); // ferme la sidebar sur mobile
+    }
   };
 
   return (
     <button
-      onClick={() => scrollToSection(href)}
-      className={cn("cursor-pointer", isSidebar ? "" : "max-md:hidden")}
+      type="button"
+      onClick={handleClick}
+      className={cn(
+        "cursor-pointer",
+        isSidebar ? "block w-full text-left p-4" : "max-md:hidden",
+      )}
     >
       {text}
     </button>

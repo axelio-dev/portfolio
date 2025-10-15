@@ -42,7 +42,7 @@ export default function Home() {
       {/* My skills */}
       <div className="m-auto" id="skills">
         <h1
-          className={`text-white text-center text-2xl font-bold scroll-m-160 mt-[150px] mb-[20px] 2xl:text-3xl 2xl:mt[100px]`}
+          className={`text-white text-center text-2xl font-bold scroll-m-16 mt-[150px] mb-[20px] 2xl:text-3xl 2xl:mt[100px]`}
         >
           My skills
         </h1>
