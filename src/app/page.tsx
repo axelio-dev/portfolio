@@ -4,6 +4,7 @@ import Card from "@/components/Card";
 import Stats from "@/components/Stats";
 import Footer from "@/components/Footer";
 import { Mail } from "lucide-react";
+import Skills from "@/components/Skills";
 
 export default function Home() {
   return (
@@ -42,19 +43,19 @@ export default function Home() {
       {/* My skills */}
       <div className="m-auto" id="skills">
         <h1
-          className={`text-white text-center text-2xl font-bold scroll-m-16 mt-[150px] mb-[20px] 2xl:text-3xl 2xl:mt[100px]`}
+          className={`text-white text-center text-2xl font-bold mt-[150px] mb-[20px] 2xl:text-3xl 2xl:mt[100px]`}
         >
           My skills
         </h1>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 justify-items-center gap-8 ml-[155px] mr-[155px]">
-          <Card image="/html.png" title="HTML" />
-          <Card image="/css.png" title="CSS" />
-          <Card image="/javascript.png" title="Javascript" />
-          <Card image="/typescript.png" title="Typescript" />
-          <Card image="/tailwind.png" title="TailwindCSS" />
-          <Card image="/mongodb.png" title="MongoDB" />
-          <Card image="/nextjs.png" title="Next.js" />
-          <Card image="/git.png" title="Git" />
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center gap-3 md:gap-6 max-w-[900px] mx-auto">
+          <Skills image="/html.png" title="HTML" />
+          <Skills image="/css.png" title="CSS" />
+          <Skills image="/javascript.png" title="Javascript" />
+          <Skills image="/typescript.png" title="Typescript" />
+          <Skills image="/tailwind.png" title="TailwindCSS" />
+          <Skills image="/mongodb.png" title="MongoDB" />
+          <Skills image="/nextjs.png" title="Next.js" />
+          <Skills image="/git.png" title="Git" />
         </div>
       </div>
 
