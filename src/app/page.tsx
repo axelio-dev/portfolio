@@ -88,10 +88,8 @@ export default function Home() {
       </div>
 
       {/* Statistics */}
-      <div className="m-auto py-10" id="statistics">
-        <h1
-          className={`text-white text-center text-2xl font-bold mt-[150px] mb-[20px]`}
-        >
+      <div className="m-auto py-10 mt-[100px] mb-[20px]" id="statistics">
+        <h1 className={`text-white text-center text-2xl font-bold mb-[75px]`}>
           Statistics
         </h1>
         <Stats />

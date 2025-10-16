@@ -12,8 +12,18 @@ export default function Stats() {
     },
   });
 
-  if (isPending) return "⏳ Chargement...";
-  if (error) return "❌ Erreur : " + error.message + console.log;
+  if (isPending)
+    return (
+      <div className="text-4xl text-white font-bold text-center">
+        ⏳ Loading...
+      </div>
+    );
+  if (error)
+    return (
+      <div className="text-4xl text-white font-bold text-center">
+        ❌ Error : {error?.message || "An error has occurred"}
+      </div>
+    );
   const totalHours = (data.total_seconds / 3600).toFixed(0);
 
   return (
