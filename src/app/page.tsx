@@ -5,6 +5,7 @@ import Stats from "@/components/Stats";
 import Footer from "@/components/Footer";
 import { Mail } from "lucide-react";
 import Skills from "@/components/Skills";
+import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
@@ -68,17 +69,17 @@ export default function Home() {
         </h1>
         <div className="mb-[5px] flex justify-center">
           <div className="grid md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-8 max-w-[920px] mx-auto">
-            <Card
+            <Projects
               description="This is a portfolio that presents me (skills, projects, etc.). You are currently on it 😊"
               title="𝙋𝙤𝙧𝙩𝙤𝙛𝙤𝙡𝙞𝙤"
               button="Visit"
               link="https://axelio-dev.vercel.app"
             />
-            <Card
+            <Projects
               description="Other projects coming soon 👀..."
               title="𝘾𝙤𝙢𝙢𝙞𝙣𝙜 𝙨𝙤𝙤𝙣..."
             />
-            <Card
+            <Projects
               description="Other projects coming soon 👀..."
               title="𝘾𝙤𝙢𝙢𝙞𝙣𝙜 𝙨𝙤𝙤𝙣..."
             />
