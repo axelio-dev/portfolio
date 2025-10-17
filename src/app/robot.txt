@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://axelio-dev.vercel.app/sitemap.ts

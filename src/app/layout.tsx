@@ -21,6 +21,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+    metadataBase: new URL(
+    process.env.NODE_ENV === "production" 
+      ? "https://axelio-dev.vercel.app" 
+      : "http://localhost:3030"
+  ),
   title: "Axelio · Aspiring Full-Stack Developer",
   description:
     "Hi! I'm Axelio, a passionate full-stack web developer in training, creating projects with Next.js, React, and TailwindCSS. I aim to grow in IT and web development.",
