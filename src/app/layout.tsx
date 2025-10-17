@@ -21,11 +21,40 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Axelio · Portfolio",
+  title: "Axelio · Aspiring Full-Stack Developer",
   description:
-    "Hello! I'm Axelio (axelio-dev), a young student learning full-stack web development and aiming to work in IT.",
+    "Hi! I'm Axelio, a passionate full-stack web developer in training, creating projects with Next.js, React, and TailwindCSS. I aim to grow in IT and web development.",
   other: {
     "google-site-verification": "uIikr_SsrUVqu6LN7Vrux_OjjMhyI_kSwgBIXaueX_o",
+    keywords:
+      "Axelio, portfolio, full-stack developer, web development, Next.js, React, TailwindCSS, web projects, student developer",
+    robots: "index, follow",
+  },
+  openGraph: {
+    title: "Axelio · Aspiring Full-Stack Developer",
+    description:
+      "Explore the projects and skills of Axelio, a dedicated student passionate about full-stack web development with Next.js, React, and TailwindCSS.",
+    url: "https://axelio-dev.vercel.app",
+    siteName: "Axelio",
+    images: [
+      {
+        url: "https://boutique.afastronomie.fr/media/catalog/product/cache/1/image/450x/9df78eab33525d08d6e5fb8d27136e95/h/e/heic1501a_r_bigthumb.jpg", // OG image
+        width: 1200,
+        height: 630,
+        alt: "Axelio · Portfolio and Full-Stack Web Development",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Axelio · Aspiring Full-Stack Developer",
+    description:
+      "Check out Axelio's portfolio and projects, showcasing skills in full-stack web development with Next.js, React, and TailwindCSS.",
+    images: [
+      "https://boutique.afastronomie.fr/media/catalog/product/cache/1/image/450x/9df78eab33525d08d6e5fb8d27136e95/h/e/heic1501a_r_bigthumb.jpg",
+    ],
   },
 };
 
