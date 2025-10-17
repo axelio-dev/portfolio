@@ -70,12 +70,22 @@ export default function Home() {
 
       {/* My skills */}
       <div className="m-auto" id="skills">
-        <h1
+        <motion.h1
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.6, duration: 1 }}
+          initial={{ opacity: 0 }}
           className={`text-white text-center text-2xl font-bold mt-[150px] mb-[20px] 2xl:text-3xl 2xl:mt[100px]`}
         >
           My skills
-        </h1>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center gap-3 md:gap-6 max-w-[900px] mx-auto">
+        </motion.h1>
+        <motion.div
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.7, duration: 1 }}
+          initial={{ opacity: 0 }}
+          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center gap-3 md:gap-6 max-w-[900px] mx-auto"
+        >
           <Skills image="/html.png" title="HTML" />
           <Skills image="/css.png" title="CSS" />
           <Skills image="/javascript.png" title="Javascript" />
@@ -84,18 +94,28 @@ export default function Home() {
           <Skills image="/mongodb.png" title="MongoDB" />
           <Skills image="/nextjs.png" title="Next.js" />
           <Skills image="/git.png" title="Git" />
-        </div>
+        </motion.div>
       </div>
 
       {/* My projects */}
       <div className="m-auto" id="projects">
-        <h1
+        <motion.h1
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.6, duration: 1 }}
+          initial={{ opacity: 0 }}
           className={`text-white text-center text-2xl font-bold mt-[150px] mb-[20px]`}
         >
           My projects
-        </h1>
+        </motion.h1>
         <div className="mb-[5px] flex justify-center">
-          <div className="grid md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-8 max-w-[920px] mx-auto">
+          <motion.div
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.7, duration: 1 }}
+            initial={{ opacity: 0 }}
+            className="grid md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-8 max-w-[920px] mx-auto"
+          >
             <Projects
               description="This is a portfolio that presents me (skills, projects, etc.). You are currently on it 😊"
               title="𝙋𝙤𝙧𝙩𝙤𝙛𝙤𝙡𝙞𝙤"
@@ -110,25 +130,50 @@ export default function Home() {
               description="Other projects coming soon 👀..."
               title="𝘾𝙤𝙢𝙢𝙞𝙣𝙜 𝙨𝙤𝙤𝙣..."
             />
-          </div>
+          </motion.div>
         </div>
       </div>
 
       {/* Statistics */}
       <div className="m-auto py-10 mt-[100px] mb-[20px]" id="statistics">
-        <h1 className={`text-white text-center text-2xl font-bold mb-[75px]`}>
+        <motion.h1
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.6, duration: 1 }}
+          initial={{ opacity: 0 }}
+          className={`text-white text-center text-2xl font-bold mb-[75px]`}
+        >
           Statistics
-        </h1>
-        <Stats />
+        </motion.h1>
+        <motion.div
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.7, duration: 1 }}
+          initial={{ opacity: 0 }}
+        >
+          <Stats />
+        </motion.div>
       </div>
 
       {/* Contact */}
       <div className="m-auto" id="contact">
-        <h1 className="text-white text-center text-2xl font-bold mt-[150px] mb-[20px]">
+        <motion.h1
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.6, duration: 1 }}
+          initial={{ opacity: 0 }}
+          className="text-white text-center text-2xl font-bold mt-[150px] mb-[20px]"
+        >
           Contact me
-        </h1>
+        </motion.h1>
 
-        <div className="flex flex-col items-center gap-5 mb-[20px]">
+        <motion.div
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.7, duration: 1 }}
+          initial={{ opacity: 0 }}
+          className="flex flex-col items-center gap-5 mb-[20px]"
+        >
           <Contact
             title="axelio.dev@gmail.com"
             description="Contact me by email"
@@ -142,11 +187,18 @@ export default function Home() {
               <Image src="/discord.png" alt="Discord" width={24} height={24} />
             }
           />
-        </div>
+        </motion.div>
       </div>
 
       {/* Footer */}
-      <Footer />
+      <motion.div
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.4, duration: 1 }}
+        initial={{ opacity: 0 }}
+      >
+        <Footer />
+      </motion.div>
     </div>
   );
 }

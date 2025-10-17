@@ -21,10 +21,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-    metadataBase: new URL(
-    process.env.NODE_ENV === "production" 
-      ? "https://axelio-dev.vercel.app" 
-      : "http://localhost:3030"
+  metadataBase: new URL(
+    process.env.NODE_ENV === "production"
+      ? "https://axelio-dev.vercel.app"
+      : "http://localhost:3030",
   ),
   title: "Axelio · Aspiring Full-Stack Developer",
   description:
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     siteName: "Axelio",
     images: [
       {
-        url: "/public/profile.webp",
+        url: "https://axelio-dev.vercel.app/profile.webp",
         width: 1200,
         height: 630,
         alt: "Axelio · Portfolio and Full-Stack Web Development",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     title: "Axelio · Aspiring Full-Stack Developer",
     description:
       "Check out Axelio's portfolio and projects, showcasing skills in full-stack web development with Next.js, React, and TailwindCSS.",
-    images: ["/public/profile.webp"],
+    images: ["https://axelio-dev.vercel.app/profile.webp"],
   },
 };
 
