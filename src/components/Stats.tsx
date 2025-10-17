@@ -1,6 +1,8 @@
 "use client";
 
 import { useQuery } from "@tanstack/react-query";
+import StarsStats from "@/components/StarsStats";
+import RepositoriesStats from "./RepositoriesStats";
 
 export default function Stats() {
   const { isPending, error, data } = useQuery({
@@ -34,12 +36,16 @@ export default function Stats() {
       </div>
 
       <div className="flex flex-col items-center justify-center text-center p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-md transition-transform duration-500 ease-in-out hover:scale-105 hover:shadow-blue-500/40 hover:border-blue-500">
-        <div className="text-4xl text-white font-bold">1</div>
+        <div className="text-4xl text-white font-bold">
+          <RepositoriesStats />
+        </div>
         <div className="mt-2 text-gray-300">Projects completed</div>
       </div>
 
       <div className="flex flex-col items-center justify-center text-center p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-md transition-transform duration-500 ease-in-out hover:scale-105 hover:shadow-blue-500/40 hover:border-blue-500">
-        <div className="text-4xl text-white font-bold">0</div>
+        <div className="text-4xl text-white font-bold">
+          <StarsStats />
+        </div>
         <div className="mt-2 text-gray-300">Stars collected</div>
       </div>
     </div>
