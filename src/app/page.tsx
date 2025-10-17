@@ -34,7 +34,6 @@ export default function Home() {
           <Image
             className="rounded-[25px] transition-transform duration-500 ease-in-out hover:scale-105"
             src="/profile.webp"
-            alt="Picture of the author"
             width={500}
             height={500}
           />
