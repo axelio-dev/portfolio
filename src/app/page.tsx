@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Navbar from "../components/Navbar";
 import Contact from "@/components/Contact";
@@ -6,6 +8,7 @@ import Footer from "@/components/Footer";
 import { Mail } from "lucide-react";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
+import { motion } from "motion/react";
 
 export default function Home() {
   return (
@@ -18,19 +21,43 @@ export default function Home() {
         className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 2xl:gap-8 items-center px-6 md:px-0"
         id="home"
       >
-        <div className="text-white mt-[150px] md:ml-[75px] 2xl:mt-[0px] 2xl:ml-[110px]">
-          <h1 className="text-5xl md:text-6xl font-bold xl:text-7xl">
+        <motion.div className="text-white mt-[150px] md:ml-[75px] 2xl:mt-[0px] 2xl:ml-[110px]">
+          <motion.h1
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.25, duration: 1 }}
+            className="text-5xl md:text-6xl font-bold xl:text-7xl"
+            initial={{ opacity: 0 }}
+          >
             I'm AxelioDev
-          </h1>
-          <h2 className="text-2xl md:text-3xl 2xl:text-4xl mb-[15px] xl:mb-[20px]">
+          </motion.h1>
+          <motion.h2
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.5, duration: 1 }}
+            className="text-2xl md:text-3xl 2xl:text-4xl mb-[15px] xl:mb-[20px]"
+            initial={{ opacity: 0 }}
+          >
             A fullstack developer in training
-          </h2>
-          <h3 className="text-xl md:text-2xl 2xl:text-3xl">
+          </motion.h2>
+          <motion.h3
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.75, duration: 1 }}
+            className="text-xl md:text-2xl 2xl:text-3xl"
+            initial={{ opacity: 0 }}
+          >
             I create websites
-          </h3>
-        </div>
+          </motion.h3>
+        </motion.div>
 
-        <div className="mt-[50px] md:mt-[150px] 2xl:m-[300px] mx-auto md:ml-auto 2xl:md-auto md:mr-[150px] size-65 2xl:size-100">
+        <motion.div
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 1, duration: 1 }}
+          initial={{ opacity: 0 }}
+          className="mt-[50px] md:mt-[150px] 2xl:m-[300px] mx-auto md:ml-auto 2xl:md-auto md:mr-[150px] size-65 2xl:size-100"
+        >
           <Image
             alt="My profile picture"
             className="rounded-[25px] transition-transform duration-500 ease-in-out hover:scale-105"
@@ -38,7 +65,7 @@ export default function Home() {
             width={500}
             height={500}
           />
-        </div>
+        </motion.div>
       </div>
 
       {/* My skills */}
