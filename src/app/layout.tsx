@@ -24,6 +24,9 @@ export const metadata: Metadata = {
   title: "Axelio · Portfolio",
   description:
     "Hello! I'm Axelio (axelio-dev), a young student learning full-stack web development and aiming to work in IT.",
+  other: {
+    "google-site-verification": "uIikr_SsrUVqu6LN7Vrux_OjjMhyI_kSwgBIXaueX_o",
+  },
 };
 
 export default function RootLayout({
