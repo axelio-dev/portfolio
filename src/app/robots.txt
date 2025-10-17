@@ -1,0 +1,3 @@
+User-agent: *
+Allow: *
+Sitemap: https://axelio-dev.vercel.app/sitemap.xml
