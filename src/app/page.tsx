@@ -32,6 +32,7 @@ export default function Home() {
 
         <div className="mt-[50px] md:mt-[150px] 2xl:m-[300px] mx-auto md:ml-auto 2xl:md-auto md:mr-[150px] size-65 2xl:size-100">
           <Image
+            alt="My profile picture"
             className="rounded-[25px] transition-transform duration-500 ease-in-out hover:scale-105"
             src="/profile.webp"
             width={500}
