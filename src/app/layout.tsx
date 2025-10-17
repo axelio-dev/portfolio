@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     siteName: "Axelio",
     images: [
       {
-        url: "https://boutique.afastronomie.fr/media/catalog/product/cache/1/image/450x/9df78eab33525d08d6e5fb8d27136e95/h/e/heic1501a_r_bigthumb.jpg", // OG image
+        url: "/public/profile.webp",
         width: 1200,
         height: 630,
         alt: "Axelio · Portfolio and Full-Stack Web Development",
@@ -52,9 +52,7 @@ export const metadata: Metadata = {
     title: "Axelio · Aspiring Full-Stack Developer",
     description:
       "Check out Axelio's portfolio and projects, showcasing skills in full-stack web development with Next.js, React, and TailwindCSS.",
-    images: [
-      "https://boutique.afastronomie.fr/media/catalog/product/cache/1/image/450x/9df78eab33525d08d6e5fb8d27136e95/h/e/heic1501a_r_bigthumb.jpg",
-    ],
+    images: ["/public/profile.webp"],
   },
 };
 
