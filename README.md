@@ -38,4 +38,7 @@ bun dev
 The local result is available on your browser, at this link: [http://localhost:3000](http://localhost:3000).
 
 ## Version
-Current version: Pre-alpha
+Current version: Beta
+
+## Special thanks
+Many thanks to [Cobra](https://github.com/cbrra) and [Lotus](https://github.com/lotus64yt) for your help 💖
