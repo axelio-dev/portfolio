@@ -103,7 +103,7 @@ export default function Home() {
 
         <div className="flex flex-col items-center gap-5 mb-[20px]">
           <Contact
-            title="axelio-dev@gmail.com"
+            title="axelio.dev@gmail.com"
             description="Contact me by email"
             icon={<Mail className="w-6 h-6 text-blue-400" />}
           />
