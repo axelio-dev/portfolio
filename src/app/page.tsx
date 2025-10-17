@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Navbar from "../components/Navbar";
-import Card from "@/components/Card";
+import Contact from "@/components/Contact";
 import Stats from "@/components/Stats";
 import Footer from "@/components/Footer";
 import { Mail } from "lucide-react";
@@ -97,32 +97,24 @@ export default function Home() {
 
       {/* Contact */}
       <div className="m-auto" id="contact">
-        <h1
-          className={`text-white text-center text-2xl font-bold mt-[150px] mb-[20px]`}
-        >
+        <h1 className="text-white text-center text-2xl font-bold mt-[150px] mb-[20px]">
           Contact me
         </h1>
-        <div className="mb-[5px] flex justify-center">
-          <div className="grid md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 gap-8 w-[750px] mx-auto">
-            <Card
-              title="axelio-dev@gmail.com"
-              description="Contact me by email"
-              icon={<Mail className="w-6 h-6 text-blue-400" />}
-            />
 
-            <Card
-              title="axelio.dev (1246396053935095819)"
-              description="Contact me on Discord"
-              icon={
-                <Image
-                  src="/discord.png"
-                  alt="Discord"
-                  width={24}
-                  height={24}
-                />
-              }
-            />
-          </div>
+        <div className="flex flex-col items-center gap-5 mb-[20px]">
+          <Contact
+            title="axelio-dev@gmail.com"
+            description="Contact me by email"
+            icon={<Mail className="w-6 h-6 text-blue-400" />}
+          />
+
+          <Contact
+            title="axelio.dev (1246396053935095819)"
+            description="Contact me on Discord"
+            icon={
+              <Image src="/discord.png" alt="Discord" width={24} height={24} />
+            }
+          />
         </div>
       </div>
 

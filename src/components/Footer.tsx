@@ -16,7 +16,10 @@ export default function Footer() {
         >
           GitHub
         </Link>
-        <Link href="#contact" className="hover:text-blue-400 transition-colors">
+        <Link
+          href="mailto:axelio-dev@gmail.com"
+          className="hover:text-blue-400 transition-colors"
+        >
           Contact
         </Link>
       </div>
