@@ -5,7 +5,7 @@ This is a website containing a portfolio of Axelio's skills and projects.
 ## Useful links
 
 Website: [https://axelio-dev.vercel.app](https://axelio-dev.vercel.app)
-Deployed by Vercel
+Deployed by [Vercel](https://vercel.com)
 
 Github repository: [https://github.com/axelio-dev/portofolio](https://github.com/axelio-dev/portofolio)
 
@@ -38,7 +38,7 @@ bun dev
 The local result is available on your browser, at this link: [http://localhost:3000](http://localhost:3000).
 
 ## Version
-Current version: v.1
+Current version: v.1.0.0
 
 ## Special thanks
 Many thanks to [Cobra](https://github.com/cbrra) and [Lotus](https://github.com/lotus64yt) for your help 💖
