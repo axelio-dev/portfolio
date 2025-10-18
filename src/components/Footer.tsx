@@ -25,7 +25,8 @@ export default function Footer() {
       </div>
       <p className="text-gray-500">
         © 2025 AxelioDev. <br />
-        ❤️ Made with love and passion.
+        ❤️ Made with love and passion. <br />
+        v.1.0.0
       </p>
     </footer>
   );
