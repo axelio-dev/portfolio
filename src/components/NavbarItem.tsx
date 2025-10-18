@@ -32,7 +32,7 @@ export default function NavbarItem({
       type="button"
       onClick={handleClick}
       className={cn(
-        "cursor-pointer",
+        "cursor-pointer relative after:content-[''] after:absolute after:left-0 after:bottom-[-3px] after:w-0 after:h-[2px] after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full",
         isSidebar ? "block w-full text-left p-4" : "max-md:hidden",
       )}
     >
