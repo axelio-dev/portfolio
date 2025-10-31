@@ -39,7 +39,7 @@ export default function Stats() {
         <div className="text-4xl text-white font-bold">
           <RepositoriesStats />
         </div>
-        <div className="mt-2 text-gray-300">Projects completed</div>
+        <div className="mt-2 text-gray-300">Projects</div>
       </div>
 
       <div className="flex flex-col items-center justify-center text-center p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-md transition-transform duration-500 ease-in-out hover:scale-105 hover:shadow-blue-500/40 hover:border-blue-500">
