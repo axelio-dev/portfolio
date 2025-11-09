@@ -25,7 +25,7 @@ export default function Home() {
           <motion.h1
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.25, duration: 1 }}
+            transition={{ delay: 0.25, duration: 0.75 }}
             className="text-5xl md:text-6xl font-bold xl:text-7xl"
             initial={{ opacity: 0 }}
           >
@@ -34,7 +34,7 @@ export default function Home() {
           <motion.h2
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.5, duration: 1 }}
+            transition={{ delay: 0.5, duration: 0.75 }}
             className="text-2xl md:text-3xl 2xl:text-4xl mb-[15px] xl:mb-[20px]"
             initial={{ opacity: 0 }}
           >
@@ -43,7 +43,7 @@ export default function Home() {
           <motion.h3
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.75, duration: 1 }}
+            transition={{ delay: 0.75, duration: 0.75 }}
             className="text-xl md:text-2xl 2xl:text-3xl"
             initial={{ opacity: 0 }}
           >
@@ -54,7 +54,7 @@ export default function Home() {
         <motion.div
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ delay: 1, duration: 1 }}
+          transition={{ delay: 1, duration: 0.75 }}
           initial={{ opacity: 0 }}
           className="mt-[50px] md:mt-[150px] 2xl:m-[300px] mx-auto md:ml-auto 2xl:md-auto md:mr-[150px] size-65 2xl:size-100"
         >
@@ -73,7 +73,7 @@ export default function Home() {
         <motion.h1
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.6, duration: 1 }}
+          transition={{ delay: 0.6, duration: 0.75 }}
           initial={{ opacity: 0 }}
           className={`text-white text-center text-2xl font-bold mt-[150px] mb-[20px] 2xl:text-3xl 2xl:mt[100px]`}
         >
@@ -82,7 +82,7 @@ export default function Home() {
         <motion.div
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.7, duration: 1 }}
+          transition={{ delay: 0.7, duration: 0.75 }}
           initial={{ opacity: 0 }}
           className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center gap-3 md:gap-6 max-w-[900px] mx-auto"
         >
@@ -102,7 +102,7 @@ export default function Home() {
         <motion.h1
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.6, duration: 1 }}
+          transition={{ delay: 0.6, duration: 0.75 }}
           initial={{ opacity: 0 }}
           className={`text-white text-center text-2xl font-bold mt-[150px] mb-[20px]`}
         >
@@ -112,7 +112,7 @@ export default function Home() {
           <motion.div
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.7, duration: 1 }}
+            transition={{ delay: 0.7, duration: 0.75 }}
             initial={{ opacity: 0 }}
             className="grid md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-8 max-w-[920px] mx-auto"
           >
@@ -139,7 +139,7 @@ export default function Home() {
         <motion.h1
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.6, duration: 1 }}
+          transition={{ delay: 0.6, duration: 0.75 }}
           initial={{ opacity: 0 }}
           className={`text-white text-center text-2xl font-bold mb-[75px]`}
         >
@@ -148,7 +148,7 @@ export default function Home() {
         <motion.div
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.7, duration: 1 }}
+          transition={{ delay: 0.7, duration: 0.75 }}
           initial={{ opacity: 0 }}
         >
           <Stats />
@@ -160,7 +160,7 @@ export default function Home() {
         <motion.h1
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.6, duration: 1 }}
+          transition={{ delay: 0.6, duration: 0.75 }}
           initial={{ opacity: 0 }}
           className="text-white text-center text-2xl font-bold mt-[150px] mb-[20px]"
         >
@@ -170,7 +170,7 @@ export default function Home() {
         <motion.div
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.7, duration: 1 }}
+          transition={{ delay: 0.7, duration: 0.75 }}
           initial={{ opacity: 0 }}
           className="flex flex-col items-center gap-5 mb-[20px]"
         >
@@ -194,7 +194,7 @@ export default function Home() {
       <motion.div
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        transition={{ delay: 0.4, duration: 1 }}
+        transition={{ delay: 0.4, duration: 0.75 }}
         initial={{ opacity: 0 }}
       >
         <Footer />
