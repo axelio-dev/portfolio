@@ -118,7 +118,7 @@ export default function Home() {
           >
             <Projects
               description="This is a portfolio that presents me (skills, projects, etc.). You are currently on it 😊"
-              title="𝙋𝙤𝙧𝙩𝙤𝙛𝙤𝙡𝙞𝙤"
+              title="𝙋𝙤𝙧𝙩𝙛𝙤𝙡𝙞𝙤"
               button="Visit"
               link="https://axelio-dev.vercel.app"
             />
