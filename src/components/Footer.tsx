@@ -24,9 +24,9 @@ export default function Footer() {
         </Link>
       </div>
       <p className="text-gray-500">
-        © 2025 AxelioDev. <br />
+        © {new Date().getFullYear()} AxelioDev. <br />
         ❤️ Made with love and passion. <br />
-        v.1.0.0
+        v.1.0.1
       </p>
     </footer>
   );
