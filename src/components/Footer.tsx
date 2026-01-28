@@ -26,7 +26,7 @@ export default function Footer() {
       <p className="text-gray-500">
         © {new Date().getFullYear()} AxelioDev. <br />
         ❤️ Made with love and passion. <br />
-        v.1.0.1
+        v.1.0.2
       </p>
     </footer>
   );
