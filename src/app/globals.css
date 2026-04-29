@@ -1,26 +1,32 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+@layer utilities {
+  .animate-scroll {
+    animation: scroll var(--animation-duration, 40s)
+      var(--animation-direction, forwards) linear infinite;
+  }
+
+  @keyframes scroll {
+    to {
+      transform: translate(calc(-50% - 0.5rem));
+    }
+  }
+
+  .pause-on-hover:hover {
+    animation-play-state: paused;
+  }
 }
