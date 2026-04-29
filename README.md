@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Axel — Developer Portfolio
+[![wakatime](https://wakatime.com/badge/user/a486a2a9-9713-41d8-951b-807f91406cb1/project/dd718d78-931c-4f93-897d-6ab46c33e162.svg)](https://wakatime.com/badge/user/a486a2a9-9713-41d8-951b-807f91406cb1/project/dd718d78-931c-4f93-897d-6ab46c33e162)
+> Personal portfolio showcasing my projects, skills, and journey as a developer.
+
+**Live preview:** [https://axelio-dev.orionhost.app](https://axelio-dev.orionhost.app)
+
+---
+
+## Tech Stack
+
+| Technology | Role |
+|---|---|
+| Next.js 15 | Framework & routing |
+| React 19 | UI library |
+| TypeScript | Type safety |
+| Tailwind CSS | Styling |
+| Framer Motion | Animations |
+| Node.js | Runtime |
+
+---
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+# Clone the repository
+git clone https://github.com/axelio-dev/portfolio.git
+cd portfolio
+
+# Install dependencies
+npm install
+
+# Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run dev      # Development server with hot reload
+npm run build    # Production build
+npm run start    # Start production server
+npm run lint     # Run ESLint
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+portfolio/
+├── app/                  # Next.js App Router
+│   ├── gallery/          # Astrophotography gallery
+│   ├── layout.tsx        # Root layout
+│   └── page.tsx          # Home page
+├── components/           # Reusable components
+├── public/               # Static assets
+└── ...
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Author
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Axel** — [@axelio-dev](https://github.com/axelio-dev)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Student Developer & Tech Enthusiast — passionate about clean UI, performance, and building things that matter.
+
+---
+
+## License
+
+This project is licensed under the [MIT License](./LICENSE).
