@@ -57,11 +57,12 @@ export default function ContactPage() {
   };
 
   return (
-    <main className="relative min-h-screen w-full bg-[#020617] flex flex-col items-center overflow-x-hidden">
+    <main className="relative min-h-screen w-full flex flex-col items-center overflow-x-hidden bg-[#020617]">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,#2563eb25,transparent_70%)]" />
+
       <Navbar />
 
-      <section className="relative w-full pt-32 pb-12 flex flex-col items-center text-center px-6">
-        <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_50%_30%,#2563eb15,transparent_70%)]" />
+      <section className="relative w-full pt-32 pb-16 flex flex-col items-center text-center px-6">
         <motion.div
           initial="hidden"
           animate="visible"
@@ -89,12 +90,9 @@ export default function ContactPage() {
         whileInView="visible"
         viewport={{ once: true, margin: "-60px" }}
         variants={stagger}
-        className="relative w-full max-w-2xl mx-auto px-6 pb-24"
+        className="relative w-full max-w-2xl mx-auto px-6 pb-24 mt-5"
       >
-        <motion.div
-          variants={fadeUp}
-          className="bg-white/[0.02] border border-white/5 rounded-2xl p-8"
-        >
+        <motion.div variants={fadeUp}>
           {status === "success" ? (
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
